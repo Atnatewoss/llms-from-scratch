@@ -1,0 +1,18 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "FastAPI backend: rule-based replies in core/rule, model code in core/nn"
+readme = "README.md"
+authors = [
+    { name = "Atnatewoss", email = "icodeyt21@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.143.3",
+    "pyrpc-core[fastapi]>=0.14.0",
+    "uvicorn>=0.35",
+]
+
+# An application, not a library: nothing to build or install.
+[tool.uv]
+package = false
